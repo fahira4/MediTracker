@@ -1,13 +1,7 @@
 public interface IHealthAnalyzer {
-    /**
-     * Menganalisis data kesehatan dan mengembalikan hasil analisis
-     * @return hasil analisis dalam bentuk String
-     */
+//Menganalisis data kesehatan dan mengembalikan hasil analisis
     String analisis();
     
-    /**
-     * Memberikan rekomendasi berdasarkan hasil analisis
-     * @return rekomendasi dalam bentuk String
-     */
+//Memberikan rekomendasi berdasarkan hasil analisis
     String rekomendasi();
 }
