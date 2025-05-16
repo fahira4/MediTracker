@@ -219,7 +219,7 @@ public class AplikasiUtama extends Application {
         containerHasil.getChildren().add(kartuInfo);
         
         List<IHealthAnalyzer> daftarAnalisis = diagnosa.getDaftarAnalisis();
-        for (IHealthAnalyzer analisis : daftarAnalisis) 
+        for (IHealthAnalyzer analisis : daftarAnalisis) { 
             String judulKartu = formatNamaKelas(analisis.getClass().getSimpleName());
             VBox kartuAnalisis = buatKartu(judulKartu);
             
@@ -241,14 +241,15 @@ public class AplikasiUtama extends Application {
             containerHasil.getChildren().add(kartuAnalisis);
         }
         
-        Label footer = new Label("Terima kasih telah menggunakan MEDITRACKER");
-        footer.setStyle("-fx-font-style: italic; -fx-text-fill: #7f8c8d;");
-        footer.setPadding(new Insets(20, 0, 0, 0));
-        containerHasil.getChildren().add(footer);
-        
-        stageUtama.setScene(sceneHasil);
+            Label footer = new Label("Terima kasih telah menggunakan MEDITRACKER");
+            footer.setStyle("-fx-font-style: italic; -fx-text-fill: #7f8c8d;");
+            footer.setPadding(new Insets(20, 0, 0, 0));
+            containerHasil.getChildren().add(footer);
+            
+            stageUtama.setScene(sceneHasil);
     }
-    
+        
+        
     // Method untuk memformat nama kelas menjadi format yang lebih mudah dibaca
     private String formatNamaKelas(String namaKelas) {
         // Menangani kasus-kasus nama kelas yang diketahui
