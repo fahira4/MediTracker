@@ -219,8 +219,7 @@ public class AplikasiUtama extends Application {
         containerHasil.getChildren().add(kartuInfo);
         
         List<IHealthAnalyzer> daftarAnalisis = diagnosa.getDaftarAnalisis();
-        for (IHealthAnalyzer analisis : daftarAnalisis) {
-            // Menggunakan nama kelas yang sebenarnya dari object analisis
+        for (IHealthAnalyzer analisis : daftarAnalisis) 
             String judulKartu = formatNamaKelas(analisis.getClass().getSimpleName());
             VBox kartuAnalisis = buatKartu(judulKartu);
             
@@ -276,7 +275,7 @@ public class AplikasiUtama extends Application {
         field.setPromptText(petunjuk);
         field.setStyle("-fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color:rgb(173, 225, 231);");
         field.setPrefHeight(35);
-        field.setPrefWidth(300); // Mengatur lebar field menjadi lebih panjang
+        field.setPrefWidth(300); 
         return field;
     }
     
@@ -286,7 +285,7 @@ public class AplikasiUtama extends Application {
         comboBox.setPromptText(petunjuk);
         comboBox.setStyle("-fx-background-radius: 5; -fx-border-radius: 5;");
         comboBox.setPrefHeight(35);
-        comboBox.setPrefWidth(300); // Mengatur lebar combobox menjadi lebih panjang
+        comboBox.setPrefWidth(300); 
         return comboBox;
     }
     
